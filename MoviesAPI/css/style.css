@@ -1,0 +1,121 @@
+body {
+    background-color: #000000f2;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+input::placeholder {
+    text-align: center;
+}
+
+/*sidebar*/
+#sidebar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    color: #f9f6f6;
+    z-index: 555;
+}
+#sidebar a {
+    text-decoration: none;
+    color: #f9f6f6;
+    position: relative;
+    top: 300px;
+}
+#sidebar .links a:hover, #sidebar .footer i:hover {
+    color: #dc3545;
+}
+#sidebar .footer i{
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: white;
+}
+#sidebar .footer p {
+    color: #999;
+}
+/*end sidebar*/
+
+/*sidenav*/
+#sidenav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 240;
+    width: 60px;
+    z-index: 555;
+}
+#sidenav i {
+    cursor: pointer;
+}
+#sidenav .toggle-icon {
+    font-size: 1.5rem;
+    color: black;
+}
+/*end sidenav*/
+
+/*api section*/
+.api .card {
+    overflow: hidden;
+}
+.api .card .caption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: translateY(100%);
+    transition: transform 1s;
+}
+.api .card:hover .caption {
+    transform: translateY(0%);
+}
+ @media screen and (max-width: 768px){
+     #movieSearch {
+         margin-bottom: 40px;
+     }
+ }
+ @media screen and (min-width: 992px){
+     .api .form-row {
+        padding-left: 90px;
+        padding-right: 90px;   
+     }
+ }
+ @media screen and (min-width: 768px){
+    .api .form-row {
+       padding-right: 10px;   
+    }
+}
+/*end api*/
+
+/*form section*/
+.alert {
+    display: none;
+}
+.form h2 {
+    color: #f9f6f6;
+}
+.form button {
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+.form button:hover {
+    color: #dc3545;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+@media screen and (min-width: 768px){
+    .pad-md {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .mar-md {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+/*end form*/
